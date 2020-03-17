@@ -61,7 +61,7 @@ class Dashboard extends Component {
     }
     fetchWorldNews() {
         let stringSearch = 'corona virus ' + this.state.newsCountry + '&';
-        var url = 'http://newsapi.org/v2/everything?' +
+        var url = 'https://newsapi.org/v2/everything?' +
             'q=' + stringSearch +
             'from=' + moment().format('YYYY-MM-DD') + '&' +
             'sortBy=popularity&' +
