@@ -1,0 +1,20 @@
+.CountryStats {
+    background: white;
+}
+
+.CountryStats .container {
+    height: 400px;
+    width: '100%';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.CountryStats .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,23 @@
+.WorldNumbers .card {
+    min-height: 340px;
+}
+
+.WorldNumbers .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.WorldNumbers .header .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width:590px) {
+    .WorldNumbers .header {
+        display: block;
+    }
+}
