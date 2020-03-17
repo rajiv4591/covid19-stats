@@ -2,9 +2,6 @@
     "name": "covid19-stats",
     "version": "0.1.1",
     "private": true,
-    "engines": {
-        "node": "12.16.1"
-    },
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
