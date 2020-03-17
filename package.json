@@ -1,42 +1,45 @@
 {
-  "name": "covid19-stats",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
-    "font-awesome": "^4.7.0",
-    "highcharts": "^8.0.4",
-    "jquery": "^3.4.1",
-    "moment": "^2.24.0",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-highcharts": "^16.1.0",
-    "react-modal": "^3.11.2",
-    "react-scripts": "3.4.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "covid19-stats",
+    "version": "0.1.1",
+    "private": true,
+    "engines": {
+        "node": "12.16.1"
+    },
+    "dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.4.1",
+        "font-awesome": "^4.7.0",
+        "highcharts": "^8.0.4",
+        "jquery": "^3.4.1",
+        "moment": "^2.24.0",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-highcharts": "^16.1.0",
+        "react-modal": "^3.11.2",
+        "react-scripts": "3.4.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
