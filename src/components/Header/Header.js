@@ -18,9 +18,9 @@ function Header() {
         <li className="nav-item">
           <a className="nav-link" href="#"><Link to="/resources">Resources</Link></a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a className="nav-link" href="#"><Link to="/tweets">Tweets</Link></a>
-        </li>
+        </li> */}
       </ul>
     </nav>
     // <div className="Header">
