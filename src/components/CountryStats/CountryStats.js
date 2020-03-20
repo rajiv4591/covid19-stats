@@ -54,7 +54,7 @@ function CountryStats(props) {
           getProvinceList(props, setSelectedProvince, selectedProvince).length > 1
             ?
             <div style={{ marginBottom: '20px', marginTop: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-              <span>Select Province:</span>
+              <span>Province:</span>
               <div className="dropdown">
                 <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                   {selectedProvince || 'Select Province'}

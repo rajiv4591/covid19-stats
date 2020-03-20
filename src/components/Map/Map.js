@@ -62,7 +62,9 @@ class Map extends Component {
                 // 2. Previously activated countries should be de-activated.
                 lastSelected.isActive = false;
             }
-            ev.target.series.chart.zoomToMapObject(ev.target);
+            // ev.target.series.chart.zoomToMapObject(ev.target);
+            if(that.props.onCountryClick) that.props.onCountryClick(ev.target.dataItem.dataContext.name);
+            else ev.target.series.chart.zoomToMapObject(ev.target);
             if (lastSelected !== ev.target) {
                 lastSelected = ev.target;
             }

@@ -17,6 +17,7 @@ class Dashboard extends Component {
         this.fetchDataByCountry = this.fetchDataByCountry.bind(this);
         this.fetchWorldNews = this.fetchWorldNews.bind(this);
         this.onCountryChange = this.onCountryChange.bind(this);
+        this.onCountryClick = this.onCountryClick.bind(this);
 
         this.state = {
             loading: false,
@@ -111,6 +112,10 @@ class Dashboard extends Component {
         this.fetchWorldNews();
         this.fetchAllCountryDetails();
     }
+    onCountryClick(country) {
+        if(country === 'United States') country = 'US';
+        this.onCountryChange(country);
+    }
     render() {
         if (!this.state.loading && this.state.covidOverviewData && this.state.topTenData) {
             return (
@@ -130,7 +135,11 @@ class Dashboard extends Component {
                                 <div className="card-body">
                                     <div className="row">
                                         <div className="col-md-6">
-                                            Select Country:
+
+                                        </div>
+                                        <div className="col-md-6">
+                                            {/* <h3>{this.state.newsCountry}</h3> */}
+                                            Country:
                                             <div className="dropdown">
                                                 <button type="button" className="btn btn-info dropdown-toggle" data-toggle="dropdown">
                                                     {this.state.newsCountry || 'Select Country'}
@@ -145,9 +154,6 @@ class Dashboard extends Component {
                                                     }
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <h3>{this.state.newsCountry}</h3>
                                         </div>
                                     </div>
                                     <div className="row">
@@ -174,7 +180,7 @@ class Dashboard extends Component {
                                             <CountryStats data={this.state.allCountriesData} country={this.state.newsCountry} />
                                         </div>
                                         <div className="col-md-12 col-sm-12 col-xs-12 col-lg-6 col-xl-6">
-                                            <Map country={this.state.mapCountryCode} />
+                                            <Map country={this.state.mapCountryCode} onCountryClick={this.onCountryClick} />
                                         </div>
                                     </div>
                                 </div>
