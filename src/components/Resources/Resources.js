@@ -29,7 +29,7 @@ class Resources extends Component {
     }
     getMaskImage() {
         this.setState({ loading: true });
-        fetch(`https://coronavirus-monitor.p.rapidapi.com/coronavirus/masks.php`, {
+        fetch(`https://coronavirus-monitor.p.rapidapi.com/coronavirus/random_masks_usage_instructions.php`, {
             method: 'GET',
             headers: this.state.headers
         })

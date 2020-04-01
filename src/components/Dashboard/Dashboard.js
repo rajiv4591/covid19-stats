@@ -55,6 +55,7 @@ class Dashboard extends Component {
         this.setState({ loading: true });
         axios.get('https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php', { 'headers': this.state.headers })
             .then((response) => {
+                console.log(response.data);
                 this.setState({ topTenData: response.data, loading: false });
             }).catch((error) => {
                 this.setState({ topTenDataError: true });

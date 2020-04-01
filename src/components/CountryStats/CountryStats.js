@@ -31,7 +31,7 @@ function getProvinceList(props, setSelectedProvince, selectedProvince) {
 
   if (country.length > 1) {
     country.forEach((item) => {
-      provinces.push(item.province);
+      if(provinces.indexOf(item.province) < 0) provinces.push(item.province);
     });
   }
 
